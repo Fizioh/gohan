@@ -71,7 +71,9 @@ body {
     min-height: 100vh;
 }
 
-
+.fa-times {
+    transform: skew(-180deg) rotate(-180deg);
+}
 
 //media queries
 
@@ -83,7 +85,7 @@ body {
 
         nav {
             position: fixed;
-            top: 0; left: 0;
+            top: 0; left: -120%;
             height: 100vh;
             width: 35rem;
             background: #000;
@@ -108,6 +110,9 @@ body {
                     }
                 }
             }
+        }
+        .nav-toggle {
+            left: 0%;
         }
     }
 }
