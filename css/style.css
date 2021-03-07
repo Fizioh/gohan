@@ -36,6 +36,14 @@ body {
   z-index: 1000;
 }
 
+#header .fa-hamburger {
+  font-size: 4rem;
+  z-index: 10000;
+  color: #FFF200;
+  cursor: pointer;
+  display: none;
+}
+
 #header .logo img {
   height: 5rem;
 }
@@ -64,5 +72,18 @@ body {
 #header nav ul li a:hover {
   color: #FFF200;
   text-decoration: none;
+}
+
+/* --- HOME ------ */
+#home {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  #header .fa-hamburger {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
