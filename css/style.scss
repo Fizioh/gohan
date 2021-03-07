@@ -75,10 +75,39 @@ body {
 
 //media queries
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     #header{
         .fa-hamburger {
             display: block;
+        }
+
+        nav {
+            position: fixed;
+            top: 0; left: 0;
+            height: 100vh;
+            width: 35rem;
+            background: #000;
+
+            ul {
+                flex-flow: column;
+                justify-content: center;
+                height: 100%;
+
+                li {
+                    margin: 2rem 0;
+
+                    a{
+                        font-size: 3.5rem;
+                        border-radius: 5rem;
+
+                        &:hover {
+                            padding: .5rem 7.5rem;
+                            color: #333;
+                            background: $yellow;
+                        }
+                    }
+                }
+            }
         }
     }
 }
