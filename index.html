@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Restaurant Gohan</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <script
+                src="https://code.jquery.com/jquery-3.6.0.min.js"
+                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+                crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <header id="header">
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#specialites">Spécialités</a></li>
+                    <li><a href="#apropos">A propos</a></li>
+                    <li><a href="#menus">Menus</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+               <div class="fas fa-hamburger"></div>
+
+            <a href="#" class="logo"><img src="images/logo.png" alt="logo" /></a>
+
+        </header>
+
+        <section id="home" class="container-fluid">
+
+            <div class="row min-vh-100 align-items-center">
+
+                <div class="col-md-8 ml-md-5 text-md-left text-center content">
+                    <h1>Un goût auquel vous ne pouvez résister</h1>
+                    <h2>enjoy the marvelous taste</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam est ipsum veritatis sit dolor qui, eum eos enim magnam, dolores distinctio commodi, aut expedita dolorum ratione?
+                     Sapiente consequuntur magnam nesciunt.</p>
+                     <a hrf="#specialites"><button>Choisissez !</button></a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <script>
+
+            $(document).ready(function(){
+                $('.fa-hamburger').click(function(){
+                    $(this).toggleClass('fa-times');
+                    $('nav').toggleClass('nav-toggle');
+                });
+
+                $('nav ul li a').click(function(){
+                    $('.fa-hamburger').removeClass('fa-times');
+                    $('nav').removeClass('nav-toggle');
+                })
+            });
+
+        </script>
+
+    </body>
+</html>
